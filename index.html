@@ -1,10 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>WebM Host</title>
+    <title>Symbol Matte Effect</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        overflow: hidden;
+      }
+
+      video {
+        width: 100%;
+        height: 100%;
+        object-fit: contain; /* 필요하면 cover로 변경 */
+        display: block;
+      }
+    </style>
   </head>
   <body>
-    OK
+    <video
+      src="./symbol_matte_effect_Gold.webm"
+      autoplay
+      muted
+      loop
+      playsinline
+    ></video>
   </body>
 </html>
